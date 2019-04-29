@@ -10,3 +10,7 @@ Slave.js is run on the machine intended to be used for crawling:
 Each slave.js operates a driver.py file which manages the directories and resources for the crawler.  
 
 Curl crawler has been provided as an example.  
+
+==================================================================================  
+
+Survey analysis scripts are used for writing S2.2
