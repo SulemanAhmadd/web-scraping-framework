@@ -1,0 +1,5 @@
+Master/master-env/*
+Master/node_modules/*
+
+Slaves/Example-Curl/node_modules/*
+
