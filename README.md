@@ -6,3 +6,7 @@ Master.js is run on a central server:
 
 Slave.js is run on the machine intended to be used for crawling:  
 **Usage: node slave.js --master-url=[e.g http://localhost] --crawler=[crawler-name]**  
+
+Each slave.js operates a driver.py file which manages the directories and resources for the crawler.  
+
+Curl crawler has been provided as an example.  
