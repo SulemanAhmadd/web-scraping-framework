@@ -10,7 +10,7 @@ def write_json(filename, data):
 def read_file(filename):
 
 	data = []
-	with open(filename,'rb') as f:
+	with open(filename,'r',encoding='utf-8') as f:
 		file = csv.reader(f)
 		for row in file:
 			data.append(row)
@@ -25,12 +25,13 @@ def main():
 	column_labels = papers[0]
 	data = papers[1:]
 
-	# analysis.per_conf_crawler_count(data)
-	# analysis.per_conf_user_interactions_count(data)
-	# analysis.per_year_crawler_count(data)
-	# analysis.per_conf_year_count(data)
-	# analysis.per_conf_undefined_count(data)
-	analysis.per_category_crawler_count(data)
+	write_json('confCount.json',analysis.per_conf_crawler_count(data))
+	write_json('confUserInt.json',analysis.per_conf_user_interactions_count(data))
+	write_json('yearCount.json',analysis.per_year_crawler_count(data))
+	write_json('confYear.json',analysis.per_conf_year_count(data))
+	write_json('confUndefined.json',analysis.per_conf_undefined_count(data))
+	write_json('catCount.json',analysis.per_category_crawler_count(data))
+
 
 if __name__ == '__main__':
 
