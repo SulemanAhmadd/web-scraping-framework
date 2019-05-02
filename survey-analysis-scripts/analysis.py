@@ -11,7 +11,7 @@ NULL = '-'
 
 confs = ["ccs", "imc", "pets", "usenix", "ndss", "sp"]
 
-crawlers = ["selenium", "phantom", "wget", "curl", "extension", "ghost.py", "modified", "scrapy", "openwpm",  \
+crawlers = ["selenium", "phantom", "wget", "curl", "tracking", "ghost.py", "modified", "scrapy", "openwpm",  \
 			"selendroid", "watir", "puppeteer", "tor", "script", "grub", "heritrix", "zap", "undefined"]
 
 years = ["2018", "2017", "2016", "2015"]
